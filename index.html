@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>Yhdyssana | Yhteen vai erikseen?</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Yhdyssana testi yhteen vai erikseen?">
+  <meta name="author" content="VarmaIS">
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <link rel="shortcut icon" href="ico/favicon.png">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row-fluid">
+      <div class="span8 offset2">
+        <div class="masthead">
+          <h3 class="muted">Yhdyssana - yhteen vai erikseen?</h3>
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="container">
+                <ul class="nav">
+                  <li><a href="#home" data-toggle="tab">Tarkista</a></li>
+                  <li><a href="#why" data-toggle="tab">Miksi</a></li>
+                  <li><a href="#how" data-toggle="tab">Miten</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- tähän formi -->
+        <section id="form-wrapper" class="row-fluid">
+          <p>Syötä sanat ja tarkasta:</p>
+          <form id="words" action="">
+            <div class="span6">
+              <input id="word1" class="sana" type="text" placeholder="yhdys" />
+            </div>
+            <div class="span6">
+              <input id="word2" class="sana" type="text" placeholder="sana" />
+            </div>
+          </form>
+        </section>
+
+        <section id="button-wrapper" class="row-fluid">
+          <button id="calculate-propability" class="btn btn-success btn-large span6 offset3">TARKASTA YHDYSSANA</button>
+        </section>
+
+        <section id="result" class="row-fluid">
+          <div id="yes-result-wrapper" class="span10 offset1">
+            <p>Sana kirjoitetaan <span id="probability"></span> % todennäköisyydellä <span id="mode"></span>.
+            </div>
+            <div id="no-result-wrapper" class="span10 offset1">
+              <p>Sanan kirjoitusasua on vaikea määrittää. Katso lisätietoa yhdyssanoista mm. 
+                <a href="http://www.cs.tut.fi/~jkorpela/kielenopas/6.1.html">J. Korpelan kielenhuolto-oppaasta.</a>
+              </p>
+            </div>
+          </section>
+
+          <hr>
+
+          <div id="tab-content" class="row-fluid">
+            <p>Pientä hiomista.</p>
+          </div>
+
+          <hr>
+
+          <div class="footer">
+            <p>© VarmaIS 2013</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div> 
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+  </html>

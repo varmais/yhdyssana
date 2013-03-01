@@ -26,6 +26,22 @@ $(function () {
 		return Math.round(big / (big+sma) * 100);
 	}
 
+	var withHyphen = function(str1, str2){
+		var vowels = ["a", "e", "i", "o", "u", "y", "ä", "ö"];
+		var lastChar = str1.substr(str1.length-1, str1.length);
+		console.log(lastChar);
+		var hyphen = false;
+		if(lastChar == str2.substr(0, 1)){
+			for(var i = 0; i < vowels.length; i++){
+				if(lastChar == vowels[i]){
+					withHyphen = true;
+					break;
+				}
+			}
+		}
+		return hyphen;
+	}
+
 	var initCalculation = function() {
 
 		var isSeparate;
@@ -34,8 +50,13 @@ $(function () {
 		var word1 = $('#word1').val();
 		var word2 = $('#word2').val();
 
+		//var T;
+		//withHyphen(word1, word2) ? T = getNumResults(word1 + '-' + word2) : T = getNumResults(word1 + word2);
 		var T = getNumResults(word1 + word2);
 		var S = getNumResults(word1 + ' ' + word2);
+
+		console.log("yhteen " + T);
+		console.log("erikseen " + S);
 
 		//var T = 5350;
 		//var S = 15000;

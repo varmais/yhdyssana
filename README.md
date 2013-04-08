@@ -1,8 +1,7 @@
 <h1>Yhdyssana - yhteen vai erikseen?</h1>
-<p>Onse aina niin vaikeaa...</p>
 
-<h2>Todo:</h2>
+<h2>Ditched:</h2>
 - ei toimi yhdysviivojen kanssa
-- tietokanta
-- haku ensin kannasta
-- hakusanat kantaan
+
+Hakukoneet ei tykkää yhdysviivoista sanojen välillä (esim. ala-aste), vaan käsittelee ne väleinä
+-> tästä tuli turha
